@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
+    "check": "biome check && tsc --noEmit",
     "dev": "node --env-file=.env --watch -r ts-node/register src/index.ts",
+    "format": "biome format",
+    "lint": "biome lint",
     "test": "jest"
   },
   "keywords": [],
